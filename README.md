@@ -6,9 +6,9 @@ This project demonstrates a **step-by-step data cleaning workflow** applied to t
 ---
 
 ## 📂 Files in This Repo
-- **`superstore_raw.xlsx`** → Original dataset (uncleaned).  
-- **`superstore_cleaned.xlsx`** → Fully cleaned dataset after Block 4.  
-- **`data_documentation.xlsx`** → Detailed log of all cleaning steps (Block 1–4).  
+- **`superstore_raw.xls`** → Original dataset (uncleaned).  
+- **`superstore_cleaned.xls`** → Fully cleaned dataset after Block 4.  
+- **`data_documentation.xls`** → Detailed log of all cleaning steps (Block 1–4).  
 
 ---
 
