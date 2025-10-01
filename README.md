@@ -75,4 +75,4 @@ data-cleaning-superstore/
 ## Example Chart
 **Sales by Category and Sub-Category**
 
-![Pivot Chart](./reports/screenshots/pivot_cat_subcat.png)
+![Pivot Chart](./reports/screenshots/pivot_cat_subcat.PNG)
