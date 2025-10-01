@@ -60,7 +60,7 @@ data-cleaning-superstore/
 ---
 
 ## Documentation
-- **Excel log:** [`docs/data_documentation.xls`](./docs/data_documentation.xls) – technical checks (unique values, nulls, etc.)  
+- **Excel log:** [`docs/data_documentation.xlsx`](./docs/data_documentation.xlsx) – technical checks (unique values, nulls, etc.)  
 - **Markdown log:** [`docs/data_documentation.md`](./docs/data_documentation.md) – daily notes and what I learned  
 
 ---
