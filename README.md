@@ -1,48 +1,78 @@
-# 🧹 Superstore Data Cleaning Project
+# Superstore Data Cleaning & Analysis
 
-## 📌 Project Overview  
-This project demonstrates a **step-by-step data cleaning workflow** applied to the popular *Superstore* dataset. The goal is to transform the raw data into a clean, analysis-ready version, while documenting every step for transparency and reproducibility.  
+This is my practice project in Excel for data cleaning and basic analysis using the **Superstore** dataset. I’m documenting each step as I go.
 
----
-
-## 📂 Files in This Repo
-- **`superstore_raw.xls`** → Original dataset (uncleaned).  
-- **`superstore_cleaned.xls`** → Fully cleaned dataset after Block 4.  
-- **`data_documentation.xls`** → Detailed log of all cleaning steps (Block 1–4).  
+So far, I’ve done two phases:
+1. **Cleaning the dataset** – making it usable and consistent  
+2. **Pivot analysis** – exploring sales patterns with Pivot Tables & Charts  
 
 ---
 
-## 🛠 Cleaning Workflow
-The cleaning process was structured into **4 Blocks**, with each committed separately to GitHub for version control.
+## Project Files
 
-### 🔹 Block 1: Column & Text Cleanup
-- Renamed headers to lowercase + underscores  
-- Trimmed text fields (`TRIM`)  
-- Checked missing values (`COUNTBLANK`)  
-- Standardized date formats to `YYYY-MM-DD`
+```
+data-cleaning-superstore/
+│
+├── data/
+│   ├── superstore_raw.xls              # raw dataset
+│   ├── superstore_cleaned_v1.xls       # after initial cleaning
+│   ├── superstore_cleaned_v2.xls       # after nulls + pivots
+│
+├── reports/
+│   ├── sales_by_category.xls           # pivot: sales by category
+│   ├── pivot_cat_subcat.xls            # pivot + chart
+│   ├── screenshots/
+│       ├── sales_by_category.png
+│       ├── pivot_cat_subcat.png
+│
+├── docs/
+│   ├── data_documentation.xls          # structured audit log
+│   ├── data_documentation.md           # narrative log
 
-### 🔹 Block 2: Duplicate Validation
-- Verified `row_id` uniqueness  
-- Confirmed `order_id` repetition expected (across multiple products)  
-
-### 🔹 Block 3: Data Types & Numeric Standards
-- Converted IDs and postal codes to **Text**  
-- Standardized numeric fields:  
-  - `sales`, `profit`, `discount` → 2 decimals  
-  - `quantity` → integer  
-- Ensured categorical fields stored as Text  
-
-### 🔹 Block 4: Categorical Standardization & Validation
-- Converted categorical values (`region`, `segment`, `category`, `sub_category`, `state`, `city`) to lowercase  
-- Extracted unique values for validation  
-- Validated `state` against U.S. reference list (50 states + DC)  
-- Reviewed city anomalies:  
-  - `new york city` consistently used (no `new york`)  
-  - All `saint` values fully spelled (no abbreviations)  
-  - `port saint lucie` verified as an official city name  
+```
 
 ---
 
-## ✅ Final Deliverables
-- A fully cleaned dataset: **`superstore_cleaned.xlsx`**  
-- A transparent step-by-step **documentation log** (`data_documentation.xlsx`)   
+## Phase 1: Cleaning
+- Renamed column headers (lowercase, underscores)  
+- Trimmed text fields (removed hidden spaces)  
+- Removed duplicates (`order_id`)  
+- Standardized date formats (YYYY-MM-DD)  
+- Checked/validated numeric columns (`sales`, `discount`, `profit`)  
+- Verified unique values for states, cities, categories  
+- Checked for missing/null values → none found  
+
+**Output:** `data/superstore_cleaned_v1.xls`  
+
+---
+
+## Phase 2: Pivot Analysis
+- Built a Pivot Table for **Sales by Category**  
+- Added **Sub-Category** breakdown  
+- Applied currency formatting (₱)  
+- Created a clustered column chart for visualization  
+- Saved a separate sheet for the report  
+
+**Output:** `data/superstore_cleaned_v2.xls` with sheets:  
+- `sales_by_category` (pivot table)  
+- `pivot_cat_subcat` (pivot chart)  
+
+---
+
+## Documentation
+- **Excel log:** [`docs/data_documentation.xls`](./docs/data_documentation.xls) – technical checks (unique values, nulls, etc.)  
+- **Markdown log:** [`docs/data_documentation.md`](./docs/data_documentation.md) – daily notes and what I learned  
+
+---
+
+## Next Steps
+- More pivot practice (sales by region, profit by segment, etc.)  
+- Try dashboards in Excel / Google Data Studio  
+- Summarize insights and write a short reflection  
+
+---
+
+## Example Chart
+**Sales by Category and Sub-Category**
+
+![Pivot Chart](./reports/screenshots/pivot_cat_subcat.png)
