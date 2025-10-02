@@ -56,3 +56,33 @@
 - Inserted footer note: *"Source: Superstore dataset (cleaned). Report generated via Excel Pivot Table, Oct 2, 2025."*
 - Exported finalized sheet as PDF: `top10_products_report.pdf`
 - Saved PDF in `/reports/` folder of GitHub repo
+
+## Oct 3, 2025 - Block 1: Conditional formatting
+- Applied conditional formatting in Excel to highlight top sales values greater than **₱1,000.**
+- Ensured formatting rules applied only to numeric field (avoided applying to headers or text)
+- Verified results visually by spot-checking high-value Rows
+
+## Oct 3, 2025 - Block 2: Basic Charts
+- Built **bar chart (Sales by Category)** using pivot table summary.
+- Built **line chart (Quarterly Sales Trend 2014-2017):
+	- Encountered issue grouping dates - Excel threw "Cannot group section."
+	- Troubleshoot by scanning for blanks in the dataset;
+		- Found that although cells appeared filled, Excel still detected blanks due to trailing rows (~55k).
+		- **Fix:** Cleared excess rows beyond row 9995, then grouping worked.
+	- Final grouping set to **Quarterly** for readability.
+- Formatted charts:
+	- Simplied data labels
+	- Adjusted chart spacing and interval display for clarity
+
+## Oct 3 2025 - Block 3: Mini Dashboard
+- Designed a **Sales Dashboard (2014-2017)** on a single sheet.
+- Layout:
+	- Top-left: Bar chart (Sales by Category)
+	- Top-right: Line chart (Quarterly Sales Trend 2014–2017)
+	- Bottom-left: Pivot Table (Sales by Category)
+	- Bottom-right: Pivot Table (Quarterly Sales with drilldown by year)
+- Formatting improvements:
+	- Added y-axis labels for clarity.
+	- Cleaned up pivot table formatting (currency ₱, alignment).
+	- Dashboard arranged to fit on a single landscape PDF page.
+- Final Output: Ready as a presentation-ready dashboard for reporting.
