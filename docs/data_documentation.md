@@ -1,14 +1,14 @@
 ## Sept 30, 2025 – Data Cleaning
 - Removed duplicates
 - Standardized column headers
-- Extracted unique values ( see [`data_documentation.xlsx`](./data_documentation.xlsx))
+- Extracted unique values ( see [`data_documentation.xls`](./data_documentation.xls))
 - Saved output as `superstore_cleaned.xlsx`
 
 ## Oct 1, 2025 - Handling MIssing Values and Pivot Setup
 - Checked each column using Filter -> looked for "(Blank)"
 - Result: No blanks found (`category`,`sub-category`,`sales`,etc.)
 - Action: no imputation needed
-- Reference log of column checks in [`data_documentation.xlsx`](./data_documentation.xlsx)
+- Reference log of column checks in [`data_documentation.xls`](./data_documentation.xls)
 - Saved output as `superstore_cleaned_v2.xls`
 
 ## Oct 1, 2025 - Pivot Table (sales by Category)
@@ -29,5 +29,30 @@
 	- X-axis - "Category / Sub-Category"
 	- Y-axis - "Sales (₱)"
 - Cleaned up chart by removing reduntdant legend
-
 - Saved chart as a new sheet: `PivotReport_Category_SubCategory`
+
+## Oct 2, 2025 - Block 1 : Find and Replace in Excel
+- Practiced using Find and Replace (Ctrl+H) for quick cleanup
+- Checked **Math entire cell contents** to avoid partial word replacements
+- Applied the following replacements
+	- `CA` - `California`
+	- `TX` - `Texas`
+	- `West` - `West`
+- Verified replacement were correct and consistent across the dataset
+
+## Oct 2, 2025 - Block 2 : Top 10 Products by sales
+- Created a new Pivot Table to rank products by total sales
+- Added `product_name` - Rows and `sales` - Values (SUM)
+- Sorted sales in descending order
+- Applied Top 10 filter  - Sum of sales
+- Formatted values in ₱ currency
+- Saved sheet as `top10_products_sales`
+
+## Oct 2, 2025 - Block 3 : Generate Top 10 Product Reports (Excel - PDF)
+- Opened Pivot Table sheet `top10_products_sales`
+- Added title row **Top 10 Products by sales - Superstore Datasheet**
+- Bolded headers (`Product Name`, `Total Sales`) and adjusted column widths
+- Applied borders around the table; shaded Grand Total row
+- Inserted footer note: *"Source: Superstore dataset (cleaned). Report generated via Excel Pivot Table, Oct 2, 2025."*
+- Exported finalized sheet as PDF: `top10_products_report.pdf`
+- Saved PDF in `/reports/` folder of GitHub repo
