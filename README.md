@@ -15,12 +15,13 @@ data-cleaning-superstore/
 │
 ├── data/
 │   ├── superstore_raw.xls              # raw dataset
-│   ├── superstore_cleaned_v1.xls       # after initial cleaning
-│   ├── superstore_cleaned_v2.xls       # after nulls + pivots
+│   ├── superstore_cleaned_v1.xls       # after cleaning only
+│   ├── superstore_cleaned_v2.xls       # after cleaning + pivots
 │
 ├── reports/
 │   ├── sales_by_category.xls           # pivot: sales by category
 │   ├── pivot_cat_subcat.xls            # pivot + chart
+|   ├── top10_products_report.pdf       # one-page PDF report: top 10 products by sales
 │   ├── screenshots/
 │       ├── sales_by_category.png
 │       ├── pivot_cat_subcat.png
@@ -56,6 +57,14 @@ data-cleaning-superstore/
 **Output:** `data/superstore_cleaned_v2.xls` with sheets:  
 - `sales_by_category` (pivot table)  
 - `pivot_cat_subcat` (pivot chart)  
+
+---
+
+## Phase 3: Report Generation
+- Converted pivot analysis into a structured, presentation-ready report.
+- Produced a Top 10 Products by Sales PDF with clear titles, styled headers, currency formatting, and source notes.
+
+**Output:** `top10_products_report.pdf` (one-page PDF report stored in `/reports/`)
 
 ---
 
