@@ -22,6 +22,7 @@ data-cleaning-superstore/
 │   ├── sales_by_category.xls           # pivot: sales by category
 │   ├── pivot_cat_subcat.xls            # pivot + chart
 |   ├── top10_products_report.pdf       # one-page PDF report: top 10 products by sales
+|   ├── sales_dashboard_2014_2017.xlsx  # consolidated dashboard (charts + pivots)
 │   ├── screenshots/
 │       ├── sales_by_category.png
 │       ├── pivot_cat_subcat.png
@@ -65,6 +66,13 @@ data-cleaning-superstore/
 - Produced a Top 10 Products by Sales PDF with clear titles, styled headers, currency formatting, and source notes.
 
 **Output:** `top10_products_report.pdf` (one-page PDF report stored in `/reports/`)
+
+## Phase 4: Dashboard Creation
+- Built a **Sales Dashboard (2014–2017)** combining bar + line charts with supporting pivot tables.
+- Visualized sales by category and quarterly sales trends in one consolidated view.
+- Dashboard designed to be **print-friendly** and presentation-ready.
+
+**Output:** `sales_dashboard_2014_2017.xlsx` (stored in `/reports/`)
 
 ---
 
