@@ -81,14 +81,7 @@ data-cleaning-superstore/
 - **Markdown log:** [`docs/data_documentation.md`](./docs/data_documentation.md) – daily notes and what I learned  
 
 ---
-
-## Next Steps
-- More pivot practice (sales by region, profit by segment, etc.)  
-- Try dashboards in Excel / Google Data Studio  
-- Summarize insights and write a short reflection  
-
----
-
+ 
 ## Example Chart
 **Sales by Category and Sub-Category**
 
