@@ -27,6 +27,10 @@ data-cleaning-superstore/
 │       ├── sales_by_category.png
 │       ├── pivot_cat_subcat.png
 │
+├── excel_dashboards/
+|   ├── superstore_dashboard.xlsx       # final output for superstore
+|   ├── week1_summary.md                # learning reflection for week 1
+│
 ├── docs/
 │   ├── data_documentation.xls          # structured audit log
 │   ├── data_documentation.md           # narrative log
@@ -67,6 +71,8 @@ data-cleaning-superstore/
 
 **Output:** `top10_products_report.pdf` (one-page PDF report stored in `/reports/`)
 
+---
+
 ## Phase 4: Dashboard Creation
 - Built a **Sales Dashboard (2014–2017)** combining bar + line charts with supporting pivot tables.
 - Visualized sales by category and quarterly sales trends in one consolidated view.
@@ -81,8 +87,23 @@ data-cleaning-superstore/
 - **Markdown log:** [`docs/data_documentation.md`](./docs/data_documentation.md) – daily notes and what I learned  
 
 ---
- 
-## Example Chart
-**Sales by Category and Sub-Category**
+## Superstore Dashboard (Excel Practice)##
+This project is part of my Excel learning journey (Week 1), where I practiced creating dashboards using pivot tables, charts, and KPIs. The dataset used is the Sample Superstore dataset, a classic retail sales dataset for data visualization practice.
 
-![Pivot Chart](./reports/screenshots/pivot_cat_subcat.PNG)
+**Dashboard Overview**
+The dashboard highlights:
+- Total Sales, Profit, Orders, and Average Profit Margin (KPIs)
+- Sales by Category – total sales across Furniture, Office Supplies, and Technology
+- Profit by Sub-Category – diverging chart showing profit vs loss items
+- Sales by Region – contribution of each region (Central, East, South, West)
+- Quantity by Ship Mode – order volumes by shipping type
+
+**Skills Practiced**
+- Pivot Table creation and formatting
+- Calculated fields (Profit Margin %)
+- Multi-chart dashboard layout (2×2 grid)
+- KPI card design
+- Consistent use of professional color palettes (blue/orange/green/red)
+- Data cleaning & number formatting
+
+**Output:** `superstore_dashboard.xlsx` (stored in `/reports/`)
