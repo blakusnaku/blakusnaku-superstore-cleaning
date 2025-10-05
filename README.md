@@ -15,29 +15,31 @@ A structured Excel-based data cleaning and preprocessing project on the Supersto
 ## Project Files
 
 ```
-data-cleaning-superstore/
+blakusnaku-superstore-cleaning/
+│
+├── data_raw/
+│   ├── superstore_raw.xls              # raw dataset
 │
 ├── data/
-│   ├── superstore_raw.xls              # raw dataset
 │   ├── superstore_cleaned_v1.xls       # after cleaning only
 │   ├── superstore_cleaned_v2.xls       # after cleaning + pivots
 │
-├── reports/
-│   ├── sales_by_category.xls           # pivot: sales by category
-│   ├── pivot_cat_subcat.xls            # pivot + chart
-|   ├── top10_products_report.pdf       # one-page PDF report: top 10 products by sales
-|   ├── sales_dashboard_2014_2017.xlsx  # consolidated dashboard (charts + pivots)
-│   ├── screenshots/
-│       ├── sales_by_category.png
-│       ├── pivot_cat_subcat.png
-│
-├── excel_dashboards/
-|   ├── superstore_dashboard.xlsx       # final output for superstore
-|   ├── week1_summary.md                # learning reflection for week 1
+├── dashboards/
+│   ├── superstore_dashboard.xlsx       # final output for superstore
+│   ├── week1_summary.md                # learning reflection for week 1
 │
 ├── docs/
 │   ├── data_documentation.xls          # structured audit log
 │   ├── data_documentation.md           # narrative log
+│ 
+├── assets/
+│   ├── sales_by_category.xls           # pivot: sales by category
+│   ├── pivot_cat_subcat.xls            # pivot + chart
+│   ├── top10_products_report.pdf       # one-page PDF report: top 10 products by sales
+│   ├── sales_dashboard_2014_2017.xlsx  # consolidated dashboard (charts + pivots)
+│   ├── screenshots/
+│       ├── sales_by_category.png
+│       ├── pivot_cat_subcat.png
 
 ```
 
