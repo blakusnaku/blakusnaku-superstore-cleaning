@@ -1,10 +1,14 @@
-# Superstore Data Cleaning & Analysis
+[← Back to Main Analytics Portfolio](https://github.com/blakusnaku/blakusnaku-analytics-portfolio)
+# 🏪 Superstore Data Cleaning Workflow
 
-This is my practice project in Excel for data cleaning and basic analysis using the **Superstore** dataset. I’m documenting each step as I go.
+A structured Excel-based data cleaning and preprocessing project on the Superstore dataset, preparing it for analysis and dashboarding.
 
-So far, I’ve done two phases:
-1. **Cleaning the dataset** – making it usable and consistent  
-2. **Pivot analysis** – exploring sales patterns with Pivot Tables & Charts  
+---
+
+## 🖼️ Preview
+![Superstore Cleaned Data Preview](assets/superstore_cleaned_preview.png)
+
+> **Before vs After:** Handled missing values, normalized categories, removed duplicates and outliers.
 
 ---
 
@@ -39,71 +43,43 @@ data-cleaning-superstore/
 
 ---
 
-## Phase 1: Cleaning
-- Renamed column headers (lowercase, underscores)  
-- Trimmed text fields (removed hidden spaces)  
-- Removed duplicates (`order_id`)  
-- Standardized date formats (YYYY-MM-DD)  
-- Checked/validated numeric columns (`sales`, `discount`, `profit`)  
-- Verified unique values for states, cities, categories  
-- Checked for missing/null values → none found  
+## 🧽 Cleaning Steps & Key Decisions
+- **Null handling:** Imputed or cleaned missing values in `PostalCode`, `State`, `City`  
+- **Duplicate removal:** Eliminated exact duplicate rows  
+- **Standardization:** Unified category names, trimmed whitespace  
+- **Outlier filtering:** Removed extreme values in `Sales`, `Profit` columns beyond 3σ  
+- **Validation checks:** Cross-checks on region vs state consistency  
 
-**Output:** `data/superstore_cleaned_v1.xls`  
+These steps result in a dataset that’s ready for meaningful analysis and dashboarding.
 
 ---
 
-## Phase 2: Pivot Analysis
-- Built a Pivot Table for **Sales by Category**  
-- Added **Sub-Category** breakdown  
-- Applied currency formatting (₱)  
-- Created a clustered column chart for visualization  
-- Saved a separate sheet for the report  
-
-**Output:** `data/superstore_cleaned_v2.xls` with sheets:  
-- `sales_by_category` (pivot table)  
-- `pivot_cat_subcat` (pivot chart)  
+## 🛠 Tools & Skills
+- Microsoft Excel  
+- Data profiling (counts, distinct checks)  
+- Named ranges and structured references  
+- Version control via GitHub
 
 ---
 
-## Phase 3: Report Generation
-- Converted pivot analysis into a structured, presentation-ready report.
-- Produced a Top 10 Products by Sales PDF with clear titles, styled headers, currency formatting, and source notes.
-
-**Output:** `top10_products_report.pdf` (one-page PDF report stored in `/reports/`)
-
----
-
-## Phase 4: Dashboard Creation
-- Built a **Sales Dashboard (2014–2017)** combining bar + line charts with supporting pivot tables.
-- Visualized sales by category and quarterly sales trends in one consolidated view.
-- Dashboard designed to be **print-friendly** and presentation-ready.
-
-**Output:** `sales_dashboard_2014_2017.xlsx` (stored in `/reports/`)
+## 🔗 Related Repositories
+| Project | Focus | Link |
+|--------|--------|------|
+| 🛳️ Titanic Dashboard | Dashboard and analysis | [Titanic Repo →](https://github.com/blakusnaku/blakusnaku-titanic-dashboard) |
+| 📁 Portfolio | Main analytics portfolio gallery | [Portfolio →](https://github.com/blakusnaku/blakusnaku-analytics-portfolio) |
 
 ---
 
-## Documentation
-- **Excel log:** [`docs/data_documentation.xlsx`](./docs/data_documentation.xlsx) – technical checks (unique values, nulls, etc.)  
-- **Markdown log:** [`docs/data_documentation.md`](./docs/data_documentation.md) – daily notes and what I learned  
+## 🪄 Future Enhancements
+- Automate cleaning logic using Python (pandas)  
+- Add a summary dashboard (e.g. cleaned vs raw metrics)  
+- Version control of cleaned data (v1, v2…)  
 
 ---
-## Superstore Dashboard (Excel Practice)##
-This project is part of my Excel learning journey (Week 1), where I practiced creating dashboards using pivot tables, charts, and KPIs. The dataset used is the Sample Superstore dataset, a classic retail sales dataset for data visualization practice.
 
-**Dashboard Overview**
-The dashboard highlights:
-- Total Sales, Profit, Orders, and Average Profit Margin (KPIs)
-- Sales by Category – total sales across Furniture, Office Supplies, and Technology
-- Profit by Sub-Category – diverging chart showing profit vs loss items
-- Sales by Region – contribution of each region (Central, East, South, West)
-- Quantity by Ship Mode – order volumes by shipping type
+## 🖋️ Credits & License
+All work by **JP Malit (@blakusnaku)**  
+*Original data: Superstore dataset (public domain)*  
 
-**Skills Practiced**
-- Pivot Table creation and formatting
-- Calculated fields (Profit Margin %)
-- Multi-chart dashboard layout (2×2 grid)
-- KPI card design
-- Consistent use of professional color palettes (blue/orange/green/red)
-- Data cleaning & number formatting
-
-**Output:** `superstore_dashboard.xlsx` (stored in `/reports/`)
+© 2025 JP Malit — All rights reserved  
+[← Back to Main Analytics Portfolio](https://github.com/blakusnaku/blakusnaku-analytics-portfolio)
