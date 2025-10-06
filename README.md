@@ -6,7 +6,10 @@ A structured Excel-based data cleaning and preprocessing project on the Supersto
 ---
 
 ## 🖼️ Preview
-![Superstore Cleaned Data Preview](assets/superstore_cleaned_preview.png)
+![Superstore Cleaned Data Preview](assets/screenshots/data_raw.png)
+
+
+![Superstore Cleaned Data Preview](assets/screenshots/data_cleaned.png)
 
 > **Before vs After:** Handled missing values, normalized categories, removed duplicates and outliers.
 
@@ -39,6 +42,8 @@ blakusnaku-superstore-cleaning/
 │   ├── screenshots/
 │       ├── sales_by_category.png
 │       ├── pivot_cat_subcat.png
+│       ├── data_raw.png
+│       ├── data_cleaned.png
 
 ```
 
