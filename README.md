@@ -6,6 +6,7 @@ A structured Excel-based data cleaning and preprocessing project on the Supersto
 ---
 
 ## 🖼️ Preview
+
 ![Superstore Cleaned Data Preview](assets/superstore_cleaned_preview.png)
 
 > **Before vs After:** Handled missing values, normalized categories, removed duplicates and outliers.
