@@ -34,7 +34,6 @@ blakusnaku-superstore-cleaning/
 │ 
 ├── assets/
 │   ├── sales_by_category.xls           # pivot: sales by category
-│   ├── pivot_cat_subcat.xls            # pivot + chart
 │   ├── top10_products_report.pdf       # one-page PDF report: top 10 products by sales
 │   ├── sales_dashboard_2014_2017.xlsx  # consolidated dashboard (charts + pivots)
 │   ├── screenshots/
