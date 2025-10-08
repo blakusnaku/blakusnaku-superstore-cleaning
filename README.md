@@ -26,6 +26,7 @@ blakusnaku-superstore-cleaning/
 ├── data/
 │   ├── superstore_cleaned_v1.xls       # after cleaning only
 │   ├── superstore_cleaned_v2.xls       # after cleaning + pivots
+│   ├── superstore_clean_extract_v1.xls # applying clean_status flag
 │
 ├── dashboards/
 │   ├── superstore_dashboard.xlsx       # final output for superstore
